@@ -1,0 +1,23 @@
+allocator_init(size_t size)
+
+	This function initializes a new memory allocator. It creates two doubley-linked lists, free_list and allocated_list, and creates a node in the free_list with size specified by the argument. This function calls malloc within it in order to make space in real memory for this "fake" memory allocator
+
+allocate(sitze_t size)
+
+	This function searches through the free_list memory and finds a suitable space in memory to hold data with size specified by the argument. It utilizes and calls one of the three allocation-method functions (first_fit, best_fit, or worst_fit) depending on what is specified in the code through a switch to find a space in free memory for the request. If no usable space is found the function returns NULL, otherwise it finds the usable address in free_list and removes that memory space from free, then adds it to the allocated_list in a new node with the specified data in it, and finally it returns the value of the address to which the data was allocated in memory.
+
+deallocate(void *ptr)
+
+	The deallocate function takes in a void* pointer indicating a memory address in the allocated memory (allocated_list) that should be deallocated. The function iterates through the allocated_list until it finds the node holding that memory address (if the address is not found, the function returns -1). It takes note of the size of the block at the given address, creates a node of that size in the free_list, and removes the node from the allocated_list. Returns 0 on successful completion of this process.
+
+first_fit(size_t size)
+
+	This is a helper function used by allocate() if it is the indicated method of memory allocation. first_fit() finds the first space in the free_list memory large enough to hold the requested size of space that needs to be allocated. This is done with a simple iteration through the free_list memory space. If no suitable space is found, NULL is returned.
+
+best_fit(size_t size)
+
+	Similar to the first_fit() function except that it finds the smallest possible chunk of memory in free_list that is still large enough to accomodate the size indicated in the argument. Again, an iteration is used to go through the free_list to find this space. If no chunk of memory large enough is found, it returns NULL.
+
+worst_fit(size_t size)
+
+	Like the other two, this function also serves as a method for memory allocation. This method searches for the largest possible space large enough to hold memory of size "size" specified in the argument. It traverses the free_list and finds the largest chunk available. If the largest space is still not large enough for the request or if there is no free space at all, it returns NULL. Otherwise returns the address of the available memory space.
