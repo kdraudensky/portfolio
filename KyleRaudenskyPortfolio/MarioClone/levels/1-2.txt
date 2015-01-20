@@ -1,0 +1,16 @@
+92 148 252
+MAINTHEME
+                                                                c                                                                        C                                           \
+                                    C                C                                                        C                                                                      \
+     C                                                                 C             C            C                        C                                             C           \
+                                                                &  C                                                                                                                 \
+          ?         C                     C                                             &BBB                       C    ??&??                    &BBB      C                         \
+                              C                   C                                               C                                                                                  \
+                                                          C   g               C                                                                                                      \
+                                 cc                         SSSSS                  S                                                                                                 \
+        SSSS                  cc                                          B&B     SS    ?     S                        k?????                   B                                    \
+      B       c                              k         SSSSS                     SSS          S                                                                                      \
+              cc                                                                SSSS          SS                                                                                     \
+   b          ccc     k    P1 P2 P2      b    b     SSSSS          b           SSSSS  b       SS    g  g   b    P2           b         k                P2      k    F     E         \
+GGGGGGG       GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG\
+GGGGGGG       GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG\

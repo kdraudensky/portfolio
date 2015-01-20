@@ -1,0 +1,29 @@
+CITATIONS:
+
+	Real Mario Game (for research):
+		http://nesbox.com/game/super-mario-bros/rom/147547c8229257f7e2c46e575f375ee6
+		
+
+	Graphics:
+		Level graphics:
+			http://www.spriters-resource.com/fullview/20592/
+		
+		Sprite graphics:
+			http://www.dev.bowdenweb.com/nes/smb/sprites/
+		
+		
+	Sounds:
+		http://www.ntu.edu.sg/home/ehchua/programming/java/J8c_PlayingSound.html
+	
+		Background Music:
+			https://soundcloud.com/sexrayvision/super-mario-theme-sex-ray
+		
+		Sound FX:
+			http://themushroomkingdom.net/media/sm64/wav
+		
+			
+	Misc:
+		http://www.koonsolo.com/news/dewitters-gameloop/
+		http://www.edu4java.com/en/game/game4.html
+		http://www.cokeandcode.com/info/tut2d.html
+		https://today.java.net/pub/a/today/2007/04/03/perils-of-image-getscaledinstance.html

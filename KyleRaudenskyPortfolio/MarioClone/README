@@ -1,0 +1,199 @@
+JAVA FILES:
+
+Blair.java
+	- A collidable object that is part of the terrain in the game, does not interact
+	  with anything besides not let things go through it
+
+Block.java
+	- A basic block class that contains both ? blocks and regular blocks, both of which
+	  are collidable objects in the game
+
+Bloud.java
+	- Clouds and bushes are both the same graphic just a different color and are both
+	  held in this class. They are StaticImage instances that are draw in the background
+	  of the levels
+	  
+Coin.java
+	- A coin object interacts with mario when he runs into it in the game, upping his
+	  coin count and disappearing afterward. It is an Item in the game
+	  
+CollidableObject.java
+	- A class representing any object in the actual game that can collide with other
+	  objects at any point, it is a PhysicsObject
+	  
+Control.java
+	- this is a wrapper for swing key pushes. Serves as the controller for the game to
+	  connect data to the view and deal with user interaction.
+	
+Enemy.java
+	- A class that contains both koopas and goombas, enemies that can interact wth mario
+	  and therefore implements the Interactive interface. It is a CollidableObject
+	
+EntryPoint.java
+	- this is where our main method creates a new instance of game and runs the actual
+	  program
+	  
+FlagBlock.java
+	- Part of terrain, it is just like a stair but represents the spot where the flag will
+	  be at the end of each level
+	  
+Game.java
+	- A class that holds all the data necessary to run a game and make it work.
+	
+GameObject.java
+	- A class for any object that will appear in the game in any way. Whether it is only
+	  drawn or if it will interact somehow in the gameplay
+	 
+GameWindow.java
+	- The actual window that is shown to the user upon running the program. Shows the
+	  different states of the game as they are called
+	  
+Goomba.java
+	- An instance of Enemy, it moves simply back and forth and has an animation to go with
+	  its movements. Kills mario if it interacts with him from the side or on top of mario
+	  but dies if mario interacts from above.
+	  
+GroundBlock.java
+	- A Terrain object used to create the ground for the levels. Does not interact with
+	  other objects other than keep them from falling through the floor
+	  
+ImageManager.java
+	- A utility class used to ensure that images are only loaded into memory once.
+	
+Interactive.java
+	- This is an interface implemented by both Enemy and Item, telling each what to do
+	  if they interact with mario in any way using a method called InteractsWithMario()
+	  
+Item.java
+	- A CollidableObject that implements the Interactive interface. When an item interacts
+	  with mario, it will have certain behavior based on whether it's a certain type of 
+	  block, a coin, or a mushroom
+	  
+Koopa.java
+	- An instance of Enemy, koopas have special behavior when interacting with mario based
+	  on their state (alive, stopped shell, moving shell).
+	  
+Level.java
+	- This class represents an actual level in the game. It reads in a text file
+	  representing the level grid and loads images onto the board based on where certain
+	  characters appear in the text file (see level_key.txt). This is also where switching
+	  between levels is handled.
+	  
+MainGame.java
+	- An instance of State, this class controls normal gameplay operations such as
+	  updating the board to allow for movement/interactions of objects while game is
+	  actually being played.
+	  
+MainMenu.java
+	- Another instance of State, is called when the user is on the main menu screen, handles
+	  what happens while this state is active
+	  
+Mario.java
+	- A class that represents the mario player, all his interactions, movements, and animations
+	
+Mushroom.java
+	- An instance of Item, this item moves just like a goomba, but if mario interacts with it
+	  it will disappear and mario will power up.
+	  
+PauseMenu.java
+	- An instance of State, is called when the pause button (return key) is pressed and "popped"
+	  off the state stack once the button is pressed again. simply pauses all current processes.
+	  
+PhysicsObject.java
+	_ A class representing any VisualObject that will implement basic physics rules during the
+	  game
+	  
+Pipe.java
+	- An instance of Terrain that will show up in the game as a pipe image
+	
+QuestionBlock.java
+	- An Item instance that interacts with mario based on simple collision rules. if mario
+	  collides from below, spit out its "contents" (either coin or mushroom), otherwise acts
+	  like a piece of terrain.
+	  
+RegBlock.java
+	- An Item instance that interacts with mario based on similar rules to question block.
+	  The difference is that if mario is big and he collides from below, the block will break,
+	  if he is small, nothing happens.
+	  
+Sound.java
+	- A sound libary that is implemented throughout the game as an enum. plays, stops, pauses,
+	  and loops sounds when called by the other classes.
+	  
+State.java
+	- A class that represents what state the game is currently in. Possible options are MainMenu,
+	  MainGame, or PauseMenu.
+	 
+StaticImage.java
+	- A VisualObject that is added to the game but only DRAWN, does not interact with anything
+	  else in the game. Used for the HUD bar and the background images in MainGame, and other
+	  objects in MainMenu.
+	  
+Terrain.java
+	- A CollidableObject that has very basic collision rules in the game. Moving things can run
+	  into these objects but they will not interact, the moving objects will just simply not be
+	  able to go through them.
+	  
+TimingController.java
+	- Handles/keeps track of the time that has passed since the last update in the game during
+	  game play
+	  
+VisualObject.java
+	- An instance of GameObject that is visible, aka is drawn to the window during the game
+	
+
+
+FONT FOLDER:
+	- Holds the replicated original mario font data and its license
+	
+	
+IMG FOLDER:
+	- Holds all the graphics/sprites used in the program. A list of all of these files would
+	  be exhaustive and pointless.
+	  
+	  
+LEVELS FOLDER:
+
+1-1.txt
+	- A text file representing level 1-1 of our mario game
+	
+1-2.txt
+	- A text file representing level 1-2 of our mario game
+	
+level_key.txt
+	- A text file explaining how the level text files are imlemented and what each character
+	  represents
+	  
+level_test.txt
+	- A level not used in the actual game but was used in testing the game
+	
+sample_level1.txt
+	_ Another level used solely for TESTING the game
+	
+Title.txt
+	_ A text file representing the layout for the Main Menu screen
+	
+SFX FOLDER:
+	- Contains all of our sound clips/music files. Again, a list would be long and pointless.
+
+	
+OTHER FILES:	
+
+CaseDiagram.jpeg
+	- A photo of our original uml design structure; very basic
+	
+Citations.txt
+	- A file containing all of our citations for the project
+	
+MarioGame.pdf
+	- This file contains the UML for MOST of our game structure. However, because our design
+	  was so complex, and lucidchart caps the complexity at 60 items, we didn't have enough
+	  room for everything. The next file contains the rest.
+	  
+MarioGame2.pdf
+	- Overflow from full UML. the arrow pointing away from the Block class should point to the
+	  Item class in the full UML diagram in the true design.
+	  
+projectlog.txt
+	- Our log that keeps track of all our meetings and what each member accomplished at those
+	  meetings.

@@ -1,0 +1,114 @@
+Chase and the Catdaddiez - Project Log
+
+Thurs. 11/14/13:
+	Group Meeting - (2 hours)
+		-Today we had our first group meeting; all members were present
+		We discussed ideas and structure of the project, prepared the
+		project proposal, and decided on a team name. We established
+		each member's strengths and weaknesses and began thinking about
+		task assignment.
+		
+Sun. 11/17/13
+	Group Meeting (4 hours)
+		-Today we set up the git, planned out the structure of our game
+		using a case diagram, and began assigning specific tasks to
+		individual members. Chase has already created many of the
+		necessary files and written legitimate chunks of code to start
+		the base for much of our work.
+
+	Open Tasks:
+
+	- Implement Timings            => Chase
+	- Implement Control Passing    => Chase
+	- Implement D/V/A Routines     => Sean
+	- Implement Collisions         => Sean
+	- Implement MusicController    => Joe
+	- Get Graphics                 => All
+	- Establish Level File Format  => Kyle
+	- Create States                => Not Yet Assigned
+
+	Accomplished Tasks:
+
+	- Establish MV Controller Framework
+	- Establish Graphics/Drawing Model
+	- Create base class model
+
+	Milestones:
+
+	*Milestone 1: First screen of SMB*
+
+	- Test drawing/updating
+	- Test physics/collisions/movement
+	- Test level importer
+	- Test screen scroll
+	- Test music/sound effects
+	- Test mushroom
+	- Test goomba
+
+
+Wed. 11/20/13
+	Group Meeting (1.5 hours)
+		-Today we met to discuss how each team member is doing with their assigned
+		part(s) of the project. We spent much of the time discussing how to
+		implement a level reader to turn a level text file into an actual level
+		model.
+
+	Kyle began writing code for this in the Level.java file but it is not fully
+	complete yet.
+	
+Sun. 11/24/13
+	Group Meeting (4 hours)
+	-We met to check in with our individual progress and work on more as well.
+		-Sean is pretty much finished with collisions, we just need to finish up some other
+		components of the project before we can officially test it.
+		
+		-Joe is mostly finished up with the music controller as well, and it is ready to be
+		implemented by the other classes in our project.
+		
+		-Kyle created classes for the objects we still need for the actual game and
+		finished the level reader, the only thing missing is that we don't yet have
+		the object classes completely done so the level reader cannot yet create instances
+		of them when necessary.
+		
+		-Chase completed work in several areas including the game class, object model
+		design, some state model and mainGame work, graphics scaling/drawing, cutting
+		out sprite graphics, TimingController, and Mario.
+		
+Tues. 12/3/13
+	Group Meeting (2 hours)
+	-Today we continued work on the actual level board and gameplay. Chase and Sean worked
+	on collisions and mario's actual movements while Kyle and Joe worked on incorporating
+	sound clips, a bit of graphics work, and inserting objects into the board.
+	
+	Challenges as of now:
+		-Our collisions, mario's movements, and overall physics of the game need lots of
+		work before we can get the game fully functional
+		-Our sound/music is very large and takes up tons of memory, we need to work on this
+		-We still haven't gotten to a point where we can work on the structure of the game
+		including main menu, options, a full set of levels, score counters, etc.
+		
+Sat. 12/7/13
+	Meeting: Kyle and Chase (6 hours)
+	We worked together and made significant progress on the gameplay and the
+	implementation of mario, his movements, and animations for events in the game.
+	
+Sun. 12/8/13
+	Group Meeting (16 hours)
+	LOTS of work done today, pretty much finished the project minus some features to be
+	added and a few bugs that need worked out before submission. Sean and Chase fixed
+	jumping and Sean fixed collisions (mostly). Kyle wrote the real levels, made mario die
+	correctly, wrote interactions for items, and made mario's running animated. Kyle and
+	Chase created all animations and behavior for changing powerUp states for mario. Sean
+	wrote animations for all enemies and their behaviors. Joe fixed sound bugs when needed,
+	including making mp3s compatible in the library and fixing music pause during pause menu.
+	Chase made the pause menu work (at some point) and also created a title screen as well
+	as loading the next level when the end of the previous one is reached. Chase drew up
+	the presentation slides and we all figured out who would discuss what for the
+	presentation. 
+	
+Mon. 12/9/13
+	Group Meeting (2 hours)
+	We met today just to wrap up the remaining tasks and split up the responsibilities. Kyle
+	wrote the readme.txt file, Joe wrote the user manual, Chase is writing some of the tech
+	manual but will receive help from all eventually. Sean organized all the files into packages,
+	and everyone helped with commenting their code and citing sources.

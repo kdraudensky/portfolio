@@ -1,0 +1,45 @@
+Formatting for text files representing levels:
+
+G - a basic ground block, does nothing but get in the way
+B - a regular block, usually floating in the air
+? - a ? block, with a coin inside
+& - a ? block with a mushroom
+g - a goomba
+k - a koopa
+c - a coin
+! - Bowser
+M - mario
+F - flag block
+P# - P represents a pipe, # will be a number representing how many blocks
+	high the pipe will be
+C - a cloud
+b - a bush
+E - end castle
+\ - indicates end of line
+
+
+
+First line of the level file will indicate background image color
+and the second will be the music file enum. All other lines represent
+lines on the actual board.
+
+
+Sample Level
+ _____________________________________________________________
+|34 467 235                                                   |
+|MAINTHEME                                                    |
+|                                                            \|
+|                                                            \|
+|                                                            \|
+|                                                            \|
+|                        ccc                                 \|
+|                                                            \|
+|                      BBBBBBBB                              \|
+|                  c                                         \|
+|                 B?B                                        \|
+|                                                            \|
+|                             ccccc                          \|
+|    M                                    B    g    P2       \|
+|GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG\|
+|GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG\|
+ -------------------------------------------------------------
